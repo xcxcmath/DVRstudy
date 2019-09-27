@@ -1,7 +1,9 @@
 project(DVRstudy)
 
-set(AutoGen_src src/main.cpp src/DVRstudyAppBase.cpp src/AutoGenApp.cpp src/VolumeTextureMaterial.cpp)
-set(AutoGen_include include/DVRstudyAppBase.hpp include/AutoGenApp.hpp include/VolumeTextureMaterial.hpp)
+set(CMAKE_CXX_FLAGS -Ofast)
+
+set(AutoGen_src src/main.cpp src/DVRstudyAppBase.cpp src/AutoGenApp.cpp src/VolumeTextureMaterial.cpp src/TextureRenderMaterial.cpp)
+set(AutoGen_include include/DVRstudyAppBase.hpp include/AutoGenApp.hpp include/VolumeTextureMaterial.hpp include/TextureRenderMaterial.hpp)
 
 add_executable(AutoGen ${AutoGen_include} ${AutoGen_src})
 

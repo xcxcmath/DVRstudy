@@ -30,6 +30,7 @@ namespace GLEngine {
         void setMaterial(const std::shared_ptr<Material> &material);
         void setMaterial(std::shared_ptr<Material> &&material);
          */
+        void setMaterial(const std::shared_ptr<Material> &material);
 
         [[nodiscard]] const std::shared_ptr<Transform> &getTransform() const noexcept;
     };

@@ -58,3 +58,7 @@ const std::shared_ptr<GLEngine::Transform> &GLEngine::RenderObject::getTransform
     return m_transform;
 }
 
+void GLEngine::RenderObject::setMaterial(const std::shared_ptr<Material> &material) {
+    m_material = material;
+}
+

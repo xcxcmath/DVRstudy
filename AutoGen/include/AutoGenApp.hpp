@@ -6,6 +6,8 @@
 #define DVRSTUDY_AUTOGENAPP_HPP
 
 #include "DVRstudyAppBase.hpp"
+#include <VolumeTextureMaterial.hpp>
+#include <TextureRenderMaterial.hpp>
 
 class AutoGenApp : public DVRstudyAppBase {
 protected:
@@ -15,6 +17,9 @@ protected:
 
     std::shared_ptr<GLEngine::Camera> m_camera;
     std::shared_ptr<GLEngine::Mesh> m_cubeMesh;
+    std::shared_ptr<VolumeTextureMaterial> m_cubeMaterial;
+    std::shared_ptr<TextureRenderMaterial> m_cubeTexMaterial;
+    std::shared_ptr<GLEngine::RenderObject> m_cube;
 
     static void createCube(const std::shared_ptr<GLEngine::Mesh>& mesh);
 
