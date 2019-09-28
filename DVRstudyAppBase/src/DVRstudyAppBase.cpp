@@ -2,7 +2,7 @@
 // Created by bjk on 19. 9. 21..
 //
 
-#include <DVRstudyAppBase.hpp>
+#include "../include/DVRstudyAppBase.hpp"
 
 DVRstudyAppBase::DVRstudyAppBase() = default;
 

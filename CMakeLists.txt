@@ -11,7 +11,9 @@ find_package(glm CONFIG REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(GLEngine)
+add_subdirectory(DVRstudyAppBase)
 add_subdirectory(AutoGen)
+add_subdirectory(BasicHolo)
 
 message("Binary Directory : ${CMAKE_BINARY_DIR}")
 file(COPY Resources DESTINATION ${CMAKE_BINARY_DIR})

@@ -5,7 +5,7 @@
 #ifndef DVRSTUDY_AUTOGENAPP_HPP
 #define DVRSTUDY_AUTOGENAPP_HPP
 
-#include "DVRstudyAppBase.hpp"
+#include <DVRstudyAppBase.hpp>
 #include <VolumeTextureMaterial.hpp>
 #include <TextureRenderMaterial.hpp>
 

@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <fstream>
 #include <iostream>
+#include <iterator>
 #include <VolumeTextureMaterial.hpp>
 
 VolumeTextureMaterial::VolumeTextureMaterial(GLuint unit, GLuint backTexUnit, const std::string &textureFile, size_t x, size_t y, size_t z)
