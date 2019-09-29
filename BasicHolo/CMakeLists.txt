@@ -2,8 +2,8 @@ project(DVRstudy)
 
 set(CMAKE_CXX_FLAGS -Ofast)
 
-set(BasicHolo_src src/main.cpp src/BasicHoloApp.cpp)
-set(BasicHolo_include include/BasicHoloApp.hpp)
+set(BasicHolo_src src/main.cpp src/BasicHoloApp.cpp src/CubeTextureMaterial.cpp)
+set(BasicHolo_include include/BasicHoloApp.hpp include/CubeTextureMaterial.hpp)
 
 add_executable(BasicHolo ${BasicHolo_include} ${BasicHolo_src})
 

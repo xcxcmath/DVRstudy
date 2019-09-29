@@ -83,7 +83,7 @@ m_data(), m_deriv1data(256), m_deriv2data(256){
         m_deriv2data[i] = (m_deriv2data[i] - deriv_shift) / (deriv_max - deriv_min);
         std::cout << m_deriv1data[i] << ' ' << m_deriv2data[i] << '\n';
     }
-    std::cout << "Sigma : " << (max_f1 / max_f2 / glm::exp(-0.5f)) << '\n';
+    std::cout << "Sigma : " << (max_f1 / max_f2 * glm::exp(-0.5f)) << '\n';
 
     glGenTextures(3, m_texID);
     glActiveTexture(GL_TEXTURE0 + m_texUnit);
