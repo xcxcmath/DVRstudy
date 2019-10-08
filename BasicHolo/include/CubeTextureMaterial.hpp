@@ -16,8 +16,7 @@ private:
     std::vector<unsigned char> m_data;
     std::vector<float> m_d1data;
     std::vector<float> m_d2data;
-    const GLuint f0_max = 256;
-    const GLuint f1_max = f0_max * 7 / 4;
+    static constexpr GLuint F0_MAX = 256;
 
 public:
     explicit CubeTextureMaterial(GLuint unit, GLuint backTexUnit,
